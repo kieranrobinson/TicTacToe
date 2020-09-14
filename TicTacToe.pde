@@ -50,7 +50,7 @@ void displayMenu() {
   //Set background to white and display "tap to start" message on screen
   background(255);
   fill(0);
-  textSize(150);
+  textSize(37.5 * displayDensity);
   textAlign(CENTER);
   text("Tap to start", width/2, height/2);
 }
@@ -68,8 +68,8 @@ void displayGame() {
 
   //Draw reset button
   rectMode(CENTER);
-  rect(resetButtonX, resetButtonY, 500, 250);
-  textSize(84);
+  rect(resetButtonX, resetButtonY, 125 * displayDensity, 62.5 * displayDensity);
+  textSize(21 * displayDensity);
   fill(0);
   //Display "RESET" text inside of reset button
   textAlign(CENTER);
@@ -86,7 +86,7 @@ void displayVictory(){
   String winner = checkWin();
  
   background(255);
-  textSize(150);
+  textSize(37.5 * displayDensity);
   textAlign(CENTER);
   fill(0);  
   stroke(0);
